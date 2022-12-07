@@ -25,15 +25,15 @@ export const SimpleForm = () => {
 
     useEffect( ()=>{
 
-        console.log('sellamoal usefect')
+        //console.log('sellamoal usefect')
     },[]);
     useEffect( ()=>{
 
-        console.log('formstate changed')
+        //console.log('formstate changed')
     },[formState]);
     useEffect( ()=>{
 
-        console.log('email changed')
+        //console.log('email changed')
     },[email]);
 
 
@@ -61,7 +61,8 @@ value={ email }
 onChange={onInputChange}
 />
 
-    {if
+    {
+        (username === 'strider2') && <Message/>
     }
 
 
