@@ -44,25 +44,25 @@ export const SimpleForm = () => {
 
 <input
 
-type="text"
-className="form-control"
-placeholder="Username"
-name="username"
-value={username}
-onChange={onInputChange}
+    type="text"
+    className="form-control"
+    placeholder="Username"
+    name="username"
+    value={username}
+    onChange={onInputChange}
 />
 <input
 
-type="email"
-className="form-control mt-3"
-placeholder="jpavezcarrillo23@gmail.com"
-name="email"
-value={ email }
-onChange={onInputChange}
+    type="email"
+    className="form-control mt-3"
+    placeholder="jpavezcarrillo23@gmail.com"
+    name="email"
+    value={ email }
+    onChange={onInputChange}
 />
 
     {
-        (username === 'strider2') && <Message/>
+        (username === 'strider3') && <Message/>
     }
 
 

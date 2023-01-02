@@ -4,13 +4,20 @@ export const Message = () => {
 
   useEffect(() => {
 
-    window.addEventListener('mousemove', (event) =>{
+    const onMouseMove = ({x, y}) =>{
+      const coords = { x, y };
+      console.log(coords);
+    }
 
-      console.log(event.x, event.y)
-    })
-   
+
+    window.addEventListener('mousemove', onMouseMove);
+
+
   
     return () => {
+
+      window.removeEventListener('mousemove', onMouseMove);
+      
      
     }
   }, [])
